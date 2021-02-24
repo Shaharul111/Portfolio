@@ -1,0 +1,487 @@
+*{
+    box-sizing: border-box;
+    font-family: 'Fira Sans', sans-serif;
+}
+
+body{
+    margin: 0;
+}
+.container{
+    width: 980px;
+    margin: 0 auto;
+}
+.nav-logo img{
+    width: 100px;
+    height: 100px;
+    background-color: white;
+    border-radius: 20px;
+}
+
+h1{
+    font-size: 2.5rem;
+    text-align:center;
+}
+h2{
+    text-align:center;
+    font-size: 1.5rem;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+    font-size: 1.2rem;
+}
+p{
+    font-size: 1.2rem;
+    text-align: justify;
+}
+
+[class*="col-"]{
+    float: left;
+    padding: 10px;
+}
+
+[class*="col-"]{
+    width: 100%;
+}
+
+/*Navbar design start  from here */
+
+
+.nav-bar{
+    background-color:#40868b;
+    text-align: center;
+    padding: 1% 7%;
+    margin-top: -5px;
+}
+.nav-bar h1{
+    color: white;
+    margin: 0;
+    padding-top: 10px;
+}
+
+.nav-menu{
+    display: flex;
+    flex-direction: column;
+    text-transform: uppercase;
+}
+
+.nav-menu a{
+    background-color: #0c6168;
+    border-radius: 10px;
+    margin: 7px 0px;
+    padding: 10px;
+}
+
+.nav-menu a:hover{
+    background-color: black;
+}
+
+.nav-bar::after{
+    content: '';
+    display: table;
+    clear: both;
+}
+
+/*Navbar design ends here */
+
+
+
+/* Profile design start here */
+
+.profile{
+    padding: 130px 10px;
+    text-align: center;
+    position: relative;
+}
+
+.profile .top-icon{
+    position: absolute;
+    right: 60px;
+    top: 20px;
+}
+.top-icon{
+    width: 100px;
+    height: 100px;
+    border-radius: 20px;
+}
+.top-icon:hover{
+    width: 120px;
+    height: 120px;
+    box-shadow:2px 5px gray ;
+
+}
+
+.profile-desc h1{
+    font-family: 'Satisfy', cursive;
+    font-size: 3rem;
+    font-family: 'Satisfy', cursive;
+}
+
+
+
+.profile-desc p{
+    color: gray;
+    margin: 0 auto 20px auto;
+    text-align: center;
+    width:90%;
+}
+.bottom-icon{
+    width: 100px;
+    height: 100px;
+    border-radius: 20px;
+}
+
+.profile .bottom-icon{
+    position: absolute;
+    left: 60px;
+    bottom: 20px;
+}
+
+.bottom-icon:hover{
+    width: 120px;
+    height: 120px;
+    box-shadow:2px 5px gray;
+
+}
+
+.profile::after{
+    content: '';
+    display: table;
+    clear: both;
+}
+
+
+/* Profile design end here */
+
+
+/*about me design starts here*/
+
+.about-me{
+    background-color: #39a4ac;
+    color: white;
+    padding: 1% 7%;
+    text-align: center;
+    font-family: 'montserrat',sans-serif;
+}
+.dotted-hr{
+    border:dotted 3px black;
+    border-bottom: none;
+    width: 200px;
+}
+.aboutme-image img{
+    width: 200px;
+    height: 220px;
+    border-radius: 50%;
+    border:2px solid white
+}
+.about-me a{
+    font-size: 1.2rem;
+}
+.about-me a:hover{
+    text-decoration: underline;
+    color: orange;
+}
+
+.aboutme-desc{
+    
+}
+.aboutme-desc p{
+    text-align: center;
+    
+}
+.aboutme-hr{
+    border:1px solid white;
+}
+
+.cv-button{
+    border: none;
+    background-color: black;
+    color: white;
+    border-radius: 12px;
+    padding: 15px;
+    margin: 10px;
+    font-size: 1rem;
+    text-align: center;
+}
+
+
+.about-me::after{
+    content: '';
+    display: table;
+    clear: both;
+}
+
+/*about me design ends here*/
+
+/*Professional experience design starts here*/
+.professional-experience{
+    padding: 1% 0%;
+}
+.professional-experience .card{
+    background-color: gray;
+    padding: 10px;
+    border-radius: 5px;
+    height: 600px;
+    transition: 0.3s;
+}
+.professional-experience .card:hover{
+    box-shadow: 0px 4px 8px 5px black;
+    background-color: rgb(42, 38, 51);
+    color: white;
+}
+.education .card{
+    background-color: rgb(42, 38, 51);
+    border-radius: 5px;
+    color:white;
+}
+.card-icon{
+   
+    text-align: center;
+}
+.card-icon img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 2px solid white;
+    margin-top: 10px;
+    padding: 5px;
+}
+.card-title h2{
+    background-color: #616161;
+    color: white;
+    padding: 10px;
+    margin-top: 10px;
+}
+.skills-container{
+    padding: 0px;
+}
+.skills-container li{
+    list-style: none;
+    font-weight: bolder;
+    margin: 20px 0px;
+    position: relative;
+    text-transform: uppercase;
+}
+.skills-container li::before{
+    content: '';
+    position: absolute;
+    top: calc(100% + 5px);
+
+    left: 0;
+    width: 100%;
+    height: 10px;
+    background-color: rgb(27, 26, 26,.5);
+    border-radius: 100px;
+
+}
+.skills-container li::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: calc(100% + 5px);
+
+    width: 0;
+    height: 10px;
+    background-color: rgb(253, 253, 255);
+
+    animation-duration: 3s;
+    animation-delay: 3s;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+
+}
+.skills-container li.html::after{
+    animation-name: html;
+}
+@keyframes html{
+    to{
+        width: 90%;
+    }
+}
+.skills-container li.css::after{
+    animation-name: css;
+}
+@keyframes css{
+    to{
+        width: 80%;
+    }
+}
+.skills-container li.bootstrap::after{
+    animation-name: bootstrap;
+}
+@keyframes bootstrap{
+    to{
+        width: 75%;
+    }
+}
+.skills-container li.javasript::after{
+    animation-name: javasript;
+}
+@keyframes javasript{
+    to{
+        width: 80%;
+    }
+}
+.skills-container li.jquery::after{
+    animation-name: jquery;
+}
+@keyframes jquery{
+    to{
+        width: 90%;
+    }
+}
+.skills-container li.php::after{
+    animation-name: php;
+}
+@keyframes php{
+    to{
+        width: 10%;
+    }
+}
+.skills-container li.nodejs::after{
+    animation-name: nodejs;
+}
+@keyframes nodejs{
+    to{
+        width: 10%;
+    }
+}
+
+.skills-container li.reactjs::after{
+    animation-name: reactjs;
+}
+@keyframes reactjs{
+    to{
+        width: 10%;
+    }
+}
+.skills-container li.github::after{
+    animation-name: github;
+}
+@keyframes github{
+    to{
+        width: 15%;
+    }
+}
+.skills-container li.python::after{
+    animation-name: python;
+}
+@keyframes python{
+    to{
+        width: 15%;
+    }
+}
+     
+.professional-experience::after{
+    content: '';
+    display: table;
+    clear: both;
+}
+/*Professional experience design ends here*/
+
+
+
+/* contact design starts here */
+.contact{
+    background-color: #39a4ac;
+    color: white;
+}
+.achievement .ache-desc  ol li{
+    text-align: left;
+    color: black;
+}
+.contactme{
+   text-align: center;
+   display: block;
+   margin: 0 auto;
+}
+.contact input,textarea{
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    text-align: justify;
+    border: none;
+    border-radius: 5px;
+    resize: none;
+}
+.contact .btn1{
+    border: none;
+    display: block;
+    float: left;
+    border-radius: 15px;
+    background-color: #052d2f;
+    color: white;
+    padding: 15px;
+    margin: 5px;
+    cursor: pointer;
+    width: 100px;
+}
+
+.contact .btn2{
+    border: none;
+    float: left;
+    border-radius: 15px;
+    background-color: #052d2f;
+    color: white;
+    padding: 15px;
+    margin: 5px;
+    cursor: pointer;
+    width: 100px;
+}
+
+.contact-links{
+    display: block;
+    text-align: center;
+    margin: 0 auto;
+    padding: 10px;
+}
+.contct-links .contact-title h2{
+    text-align: center;
+}
+.contact-links .contact-desc .facebook{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin:10px;
+}
+.contact-links .contact-desc .email{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin:10px;
+}
+.contact-links .contact-desc .linkedin{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin:10px;
+}
+.contact-links .contact-desc .twitter{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin:10px;
+}
+.contact::after{
+    content: '';
+    display: table;
+    clear: both;
+}
+/* contact design ends here */
+
+/* footer design */
+footer p{
+    background-color: black;
+    color: white;
+    font-weight: bold;
+    margin: 0 auto;
+    text-align: center;
+    padding: 20px;
+}
+footer::after{
+    content: '';
+    display: table;
+    clear: both;
+}
